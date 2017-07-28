@@ -28,7 +28,7 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
         helper=new DBHelper(UpdateActivity.this);
         database=helper.getWritableDatabase();
         et_title_update=(EditText)findViewById(R.id.et_Title_Update);
-        et_title_update=(EditText)findViewById(R.id.et_Content_Update);
+        et_content_update=(EditText)findViewById(R.id.et_Content_Update);
         btn_update=(Button)findViewById(R.id.btn_Save_Update);
         btn_update.setOnClickListener(this);
         tv_result=(TextView)findViewById(R.id.tv_result_update);

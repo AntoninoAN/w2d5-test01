@@ -76,4 +76,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public boolean checkEmptySearch(){
         return et_searchvalues.getText().toString().isEmpty();
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        et_searchvalues.setText("");
+    }
 }
