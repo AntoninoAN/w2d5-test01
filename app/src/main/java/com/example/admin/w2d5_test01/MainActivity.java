@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public EditText et_searchvalues;
     public Button btn_save,btn_read,btn_delete,btn_update;
     private static final String TAG= MainActivity.class.getSimpleName()+"_TAG";
-    private static final String META_DATA= "com.example.admin.w2d5_test01_META_DATA";
+    public static final String META_DATA= "com.example.admin.w2d5_test01_META_DATA";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
