@@ -40,19 +40,22 @@ public class SaveActivity extends AppCompatActivity implements View.OnClickListe
            et_title_content.setText("");
        }
        else {
+           tv_result_save.setText("");
            String title = et_title_save.getText().toString();
-           String subtitle = et_title_content.getText().toString();
+           String content = et_title_content.getText().toString();
            ContentValues values = new ContentValues();
            values.put(FeedEntry.COLUMN_NAME_TITLE, title);
-           values.put(FeedEntry.COLUMN_NAME_SUBTITLE, subtitle);
+           values.put(FeedEntry.COLUMN_NAME_SUBTITLE, content);
            long recordId = database.insert(FeedEntry.TABLE_NAME, null, values);
            if (recordId > 0) {
-               Toast.makeText(SaveActivity.this, "RECORD SAVED", Toast.LENGTH_SHORT).show();
+               //Toast.makeText(SaveActivity.this, "RECORD SAVED", Toast.LENGTH_SHORT).show();
+               tv_result_save.setText("RECORD SAVED: Note Title: "+title+" Content Title: "+content);
                Log.d(TAG, "saveRecord: Record Saved.");
                et_title_save.setText("");
                et_title_content.setText("");
            } else {
-               Toast.makeText(SaveActivity.this, "RECORD NOT SAVED", Toast.LENGTH_SHORT).show();
+               //Toast.makeText(SaveActivity.this, "RECORD NOT SAVED", Toast.LENGTH_SHORT).show();
+               tv_result_save.setText("RECORD NOT SAVED.");
                Log.d(TAG, "saveRecord: Record not Saved.");
            }
        }
