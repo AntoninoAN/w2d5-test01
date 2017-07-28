@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.admin.w2d5_test01.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/lbl_activity_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_files_home"
+        android:hint="@string/lbl_et_update_delete_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_save_home"
+        android:text="@string/lbl_btn_save_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<Button
+        android:id="@+id/btn_read_home"
+        android:text="@string/lbl_btn_read_all_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<Button
+        android:id="@+id/btn_update_home"
+        android:text="@string/lbl_btn_update_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<Button
+        android:id="@+id/btn_delete_home"
+        android:text="@string/lbl_btn_delete_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

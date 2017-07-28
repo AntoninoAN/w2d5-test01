@@ -11,4 +11,6 @@
     <string name="lbl_activity_delete">DELETE</string>
     <string name="lbl_activity_update">UPDATE</string>
     <string name="lbl_activity_save">SAVE</string>
+    <string name="lbl_activity_home">HOME</string>
+    <string name="lbl_et_update_delete_file">UPDATE/DELETE FILE</string>
 </resources>
