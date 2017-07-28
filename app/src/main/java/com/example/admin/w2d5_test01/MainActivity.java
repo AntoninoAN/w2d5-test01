@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 callUpdateActivity();
                 break;
             case R.id.btn_delete_home:
+                callDeleteActivity();
                 break;
         }
     }

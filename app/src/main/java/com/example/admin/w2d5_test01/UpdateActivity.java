@@ -70,6 +70,7 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
                     et_content_update.setText("");
                 } else
                     Log.d(TAG, "updatedRecord: No Records Updated");
+                tv_result.setText("No Records Updated.");
             }
         }
 
