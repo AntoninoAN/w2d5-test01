@@ -62,9 +62,9 @@ public class SaveActivity extends AppCompatActivity implements View.OnClickListe
     }
     public boolean checkEmptySearch(){
         if(et_title_content.getText().toString().isEmpty()||et_title_save.getText().toString().isEmpty()){
-            return false;
+            return true;
         }
-        else return true;
+        else return false;
     }
     @Override
     public void onClick(View v) {
