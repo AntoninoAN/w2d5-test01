@@ -35,7 +35,7 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
         Intent intent =getIntent();
         if(intent!=null) {
             message= intent.getStringExtra(MainActivity.META_DATA);
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -68,9 +68,10 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
                     Log.d(TAG, "updatedRecord: Records Updated");
                     et_title_update.setText("");
                     et_content_update.setText("");
-                } else
+                } else{
                     Log.d(TAG, "updatedRecord: No Records Updated");
                 tv_result.setText("No Records Updated.");
+                }
             }
         }
 

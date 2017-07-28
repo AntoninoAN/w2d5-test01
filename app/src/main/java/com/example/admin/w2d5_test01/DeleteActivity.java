@@ -34,7 +34,7 @@ public class DeleteActivity extends AppCompatActivity implements View.OnClickLis
         Intent intent =getIntent();
         if(intent!=null) {
             message= intent.getStringExtra(MainActivity.META_DATA);
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
         }
     }
     private void deleteRecord(){
