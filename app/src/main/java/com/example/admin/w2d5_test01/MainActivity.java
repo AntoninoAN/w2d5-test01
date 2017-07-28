@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -45,6 +46,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void callReadActivity(){
         Intent intent= new Intent(MainActivity.this,SaveActivity.class);
         startActivity(intent);
+    }
+    public void callUpdateActivity(){
+        Intent intent= new Intent(MainActivity.this,UpdateActivity.class);
+        if(checkEmptySearch()) {
+            Toast.makeText(MainActivity.this,"NOT ALLOW EMPTY VALUES",Toast.LENGTH_SHORT).show();
+        }
+        else {
+            intent.putExtra(META_DATA, et_searchvalues.getText().toString());
+            startActivity(intent);
+        }
+    }
+    public void callDeleteActivity(){
+        Intent intent= new Intent(MainActivity.this,DeleteActivity.class);
+        if(checkEmptySearch()) {
+            Toast.makeText(MainActivity.this,"NOT ALLOW EMPTY VALUES",Toast.LENGTH_SHORT).show();
+        }
+        else {
+            intent.putExtra(META_DATA, et_searchvalues.getText().toString());
+            startActivity(intent);
+        }
     }
     public boolean checkEmptySearch(){
         return et_searchvalues.getText().toString().isEmpty();
