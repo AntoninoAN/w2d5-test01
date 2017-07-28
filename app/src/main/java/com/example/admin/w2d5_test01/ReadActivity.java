@@ -51,7 +51,7 @@ public class ReadActivity extends AppCompatActivity implements View.OnClickListe
             long entryId = cursor.getLong(cursor.getColumnIndexOrThrow(FeedEntry._ID));
             String entryTitle = cursor.getString(cursor.getColumnIndexOrThrow(FeedEntry.COLUMN_NAME_TITLE));
             String entrySubtitle = cursor.getString(cursor.getColumnIndexOrThrow(FeedEntry.COLUMN_NAME_SUBTITLE));
-            stringBuilder.append("ID: "+entryId+" TITLE: "+entryTitle+" SUBTITLE: "+entrySubtitle);
+            stringBuilder.append("ID: "+entryId+" NOTE TITLE: "+entryTitle+" CONTENT TITLE: "+entrySubtitle);
             stringBuilder.append("\n");
             tv_result.setText("");
             tv_result.setText(stringBuilder);
