@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
     public void callReadActivity(){
-        Intent intent= new Intent(MainActivity.this,ReadActivity.class);
+        Intent intent= new Intent(MainActivity.this,SaveActivity.class);
         startActivity(intent);
     }
     public boolean checkEmptySearch(){
