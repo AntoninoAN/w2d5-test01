@@ -33,18 +33,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_save_home:
-                callReadActivity();
+                callSaveActivity();
                 break;
             case R.id.btn_read_home:
+                callReadActivity();
                 break;
             case R.id.btn_update_home:
+                callUpdateActivity();
                 break;
             case R.id.btn_delete_home:
                 break;
         }
     }
-    public void callReadActivity(){
+    public void callSaveActivity(){
         Intent intent= new Intent(MainActivity.this,SaveActivity.class);
+        startActivity(intent);
+    }
+    public void callReadActivity(){
+        Intent intent=new Intent(MainActivity.this,ReadActivity.class);
         startActivity(intent);
     }
     public void callUpdateActivity(){

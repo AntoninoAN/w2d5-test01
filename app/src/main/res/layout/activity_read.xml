@@ -12,7 +12,7 @@
         android:layout_height="wrap_content" />
     <Button
         android:id="@+id/btn_Read_Read"
-        android:text="@string/lbl_btn_delete_note"
+        android:text="@string/lbl_btn_read_all_notes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
