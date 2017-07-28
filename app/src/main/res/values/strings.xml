@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">w2d5-test01</string>
+    <string name="lbl_et_note_title_hint">Note Title:</string>
+    <string name="lbl_et_note_content_hint">Note Content:</string>
+    <string name="lbl_btn_save_note">SAVE NOTE</string>
+    <string name="lbl_tv_result_hint">RESULT:</string>
+    <string name="lbl_btn_update_note">UPDATE NOTE</string>
+    <string name="lbl_btn_read_all_notes">READ ALL NOTES</string>
+    <string name="lbl_btn_delete_note">DELETE NOTE</string>
+    <string name="lbl_activity_read">READ</string>
+    <string name="lbl_activity_delete">DELETE</string>
+    <string name="lbl_activity_update">UPDATE</string>
+    <string name="lbl_activity_save">SAVE</string>
+</resources>
